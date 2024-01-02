@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="indexhome.html">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="indexcontact.html">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+          
+
+            <section class="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </section>
+            
+          
+            <a href="payment.html" class="btn">checkout now</a>
+        </div>
+
+    </header>
+
+    <section class="menu" id="menu">
+        <h1 class="heading"> Our <span>Menu</span> </h1>
+        <div class="box-container" id="items-container">
+            <!-- Your existing box elements -->
+            <div class="box">
+                <img src="images/menu-1.png" alt="">
+                <h3>Fresh and Tasty</h3>
+                <div class="price">$8.99 <span>14.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+            <!-- Other box elements... -->
+        </div>
+    </section>
+    
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </section>
+    
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

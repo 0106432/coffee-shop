@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="indexhome.html">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="indexcontact.html">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+          
+
+            <section class="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items">
+                    
+                </ul>
+                <p class="total">Total: $<span id="cart-total">0.00</span></p>
+            </section>
+            
+          
+            <a href="payment.html" class="btn">checkout now</a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Online coffee Shop Website</h3>
+            <a href="#menu" class="btn">Order now</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+  
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our <span>menu</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/menu-1.png" alt="">
+                <h3>Flat white</h3>
+                <div class="price">$8.99 <span>14.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-2.png" alt="">
+                <h3>American coffee</h3>
+                <div class="price">$10.99 <span>15.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-3.png" alt="">
+                <h3>Latte</h3>
+                <div class="price">$13.99 <span>19.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-4.png" alt="">
+                <h3>Cappuccino</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-5.png" alt="">
+                <h3>White mocha</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-6.png" alt="">
+                <h3>Turkish coffee</h3>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <button class="btn addToCart">Add to cart</button>
+            </div>
+
+        </div>
+        <div id="animatedProduct" class="hidden"></div>
+    </section>
+
+   
+
+    <section class="products" id="products">
+
+        <h1 class="heading"> our <span>products</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fresh coffee beans</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$6.99 <span>$14.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Columbian roast</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Peru coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> customer's <span>review</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>I stumbled upon this coffee haven and instantly fell in love. The baristas are not only skilled but also incredibly friendly, making each visit a joy. The coffee? Exceptional! From the perfectly pulled espresso shots to the rich and flavorful lattes, every sip is a celebration of quality. The cozy ambiance and tasty pastries are the icing on the cake. I can't recommend this place enough!"</p>
+                <img src="images/pic-1.png" class="user" alt="">
+                <h3>Ali Afzal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>This coffee shop is my go-to spot for a caffeine fix! The variety of coffee options, from classic brews to inventive specialty drinks, caters to every taste. The attention to detail in the brewing process is evident in the robust and satisfying flavors. The warm and inviting atmosphere makes it an ideal place to catch up with friends or spend a quiet afternoon. I've also become a fan of their curated selection of beans for home brewing. A must-visit for any coffee enthusiast!"</p>
+                <img src="images/pic-2.png" class="user" alt="">
+                <h3>Abu Bakkar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p> can't get enough of the incredible coffee served at this charming establishment. The staff's passion for their craft is evident, and it reflects in the consistently excellent beverages. Whether I'm in the mood for a classic cup of joe or an indulgent treat like the decadent mochas, I'm never disappointed. The attention to creating a sustainable and eco-friendly environment is a big plus. This place has become my second home; I'm hooked on the fantastic brews and friendly vibes!".</p>
+                <img src="images/pic-3.png" class="user" alt="">
+                <h3>M.Ramzan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+  
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> our <span>blogs</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Coffee and Health</a>
+                    <span>by admin / 21st may, 2021</span>
+                    <p>Exploring the Benefits of Your Daily Cup</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Meet Our Baristas</a>
+                    <span>by admin / 21st may, 2021</span>
+                    <p>The Artists Behind Your Favorite Brews</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Coffee and Community</a>
+                    <span>by admin / 21st may, 2021</span>
+                    <p>Events and Gatherings at Cafena</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="https://www.facebook.com/karlos.salah?mibextid=2JQ9oc" class="fab fa-facebook-f"></a>
+            <a href="https://instagram.com/karlos.ashraf?igshid=MzMyNGUyNmU2YQ==" class="fab fa-twitter"></a>
+            <a href="https://instagram.com/karlos.ashraf?igshid=MzMyNGUyNmU2YQ==" class="fab fa-instagram"></a>
+            <a href="https://instagram.com/karlos.ashraf?igshid=MzMyNGUyNmU2YQ==" class="fab fa-linkedin"></a>
+            <a href="https://instagram.com/karlos.ashraf?igshid=MzMyNGUyNmU2YQ==" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="index.html">home</a>
+            <a href="indexhome.html">about</a>
+            <a href="index.html#menu">menu</a>
+            <a href="index.html#products">products</a>
+            <a href="index.html#review">review</a>
+            <a href="indexcontact.html">contact</a>
+            <a href="index.html#blogs">blogs</a>
+        </div>
+
+        <div class="credit">created by <span>MsCube Tech</span> | all rights reserved</div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+<script>
+    const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2500,
+    reset: true
+});
+sr.reveal('.content', {});
+sr.reveal('.menu', {});
+sr.reveal('.blogs', {});
+sr.reveal('.products', {});
+sr.reveal('.review', {});
+sr.reveal('.header', {});
+
+
+
+
+function addToCartHandler(event) {
+    const box = event.target.closest('.box');
+    const itemName = box.querySelector('h3').textContent;
+    const itemPrice = parseFloat(box.querySelector('.price').textContent.replace('$', ''));
+    const itemImage = box.querySelector('img').src;
+
+    // Create an image element with the product image
+    const productImage = document.createElement('img');
+    productImage.src = itemImage;
+    productImage.style.width = '50px';
+    productImage.style.height = '50px';
+
+    // Append the image element to the animatedProduct element
+    const animatedProduct = document.getElementById('animatedProduct');
+    animatedProduct.appendChild(productImage);
+
+    // Remove the hidden class from the animatedProduct element to make it visible
+    animatedProduct.classList.remove('hidden');
+
+    // Add a 'bounceOut' animation to the animatedProduct element when it is clicked
+    animatedProduct.addEventListener('click', function() {
+        this.classList.add('animate__animated', 'animate__bounceOut');
+        setTimeout(() => {
+            this.classList.add('hidden');
+            this.classList.remove('animate__animated', 'animate__bounceOut');
+        }, 1000);
+    });
+
+    // Update the cart
+    const cartItem = document.createElement('li');
+    cartItem.innerHTML = `
+        <div class="cart-item-details">
+            <img src="${itemImage}" alt="${itemName}">
+            <div>
+                <h4>${itemName}</h4>
+                <p class="cart-item-price">$${itemPrice.toFixed(2)}</p>
+            </div>
+        </div>
+    `;
+
+    const cartItemsList = document.getElementById('cart-items');
+    cartItemsList.appendChild(cartItem);
+
+    const cartTotal = document.getElementById('cart-total');
+    let currentTotal = parseFloat(cartTotal.textContent);
+    currentTotal += itemPrice;
+    cartTotal.textContent = currentTotal.toFixed(2);
+}
+</script>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
